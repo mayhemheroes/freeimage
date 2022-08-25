@@ -1,0 +1,4 @@
+project: PROJECT
+target: load_from_memory_fuzzer
+cmds:
+- cmd: /out/load_from_memory_fuzzer
