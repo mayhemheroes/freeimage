@@ -17,7 +17,7 @@
 
 # b44ExpLogTable.cpp only contains a definition of main().
 sed -i 's/Source\/OpenEXR\/IlmImf\/b44ExpLogTable.cpp//' Makefile.srcs
-make LIBRARIES=-lc++ -j$(nproc)
+CXXFLAGS="$CXXFLAGS -std=c++14" make LIBRARIES=-lc++ -j$(nproc)
 
 INSTALL_DIR="$PWD/Dist"
 
