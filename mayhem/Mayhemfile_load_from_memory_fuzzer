@@ -1,0 +1,6 @@
+project: freeimage
+target: load_from_memory_fuzzer
+
+cmds:
+  - cmd: /mayhem/load_from_memory_fuzzer
+    libfuzzer: true
